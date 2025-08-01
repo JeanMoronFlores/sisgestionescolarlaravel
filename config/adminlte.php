@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'Sistema',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -326,6 +326,12 @@ return [
             'icon' => 'far fa-fw fa-file',
             'label' => 4,
             'label_color' => 'success',
+        ],
+        ['header' => 'account_settings'],
+        [
+            'text' => 'Configuración Colegio',
+            'url' => 'admin/configuracion',
+            'icon' => 'fas fa-fw fa-page',
         ],
         ['header' => 'account_settings'],
         [
