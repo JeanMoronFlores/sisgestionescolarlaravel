@@ -331,7 +331,12 @@ return [
         [
             'text' => 'Configuración Colegio',
             'url' => 'admin/configuracion',
-            'icon' => 'fas fa-fw fa-page',
+            'icon' => 'fas fa-fw fa-file',
+        ],
+                [
+            'text' => 'Gestiones',
+            'url' => 'admin/gestiones',
+            'icon' => 'fas fa-fw fa-file',
         ],
         ['header' => 'account_settings'],
         [
@@ -481,12 +486,17 @@ return [
             ],
         ],
         'Sweetalert2' => [
-            'active' => false,
+            'active' => true,
             'files' => [
                 [
                     'type' => 'js',
-                    'asset' => false,
-                    'location' => '//cdn.jsdelivr.net/npm/sweetalert2@8',
+                    'asset' => true,
+                    'location' => '//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js',
+                ],
+                [
+                    'type' => 'css',
+                    'asset' => true,
+                    'location' => '//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js',
                 ],
             ],
         ],
